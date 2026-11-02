@@ -1,0 +1,35 @@
+# Copy to profile.yaml (gitignored) and fill in. NEVER commit real PII.
+identity:
+  legal_name: "Jane Doe"
+  preferred_name: "Jane"
+  phone: "+15555550100"
+  email: "you@example.com"
+  city_state: "City, ST"
+  github: "https://github.com/you"
+  linkedin: null
+  resume_pdf: path/to/resume.pdf
+  transcript_pdf: null
+
+logistics:
+  school_start_year: 2025
+  graduation: "2028-05"          # YYYY-MM
+  grad_term_wording: "Expected May 2028"
+  school: "Your University"
+  degree: "B.S. Computer Science"
+  work_authorization: citizen    # citizen | pr | visa:<type>
+  requires_sponsorship: false
+  relocation: "yes"
+  available_from: "2027-05-15"
+  available_to: "2027-08-31"
+
+form_defaults:
+  gpa: omit
+  demographic_optional: blank    # blank | answer
+  how_did_you_hear: "career site"
+  references: none
+
+consent:
+  auto_submit_portals: [workday, greenhouse, lever, amazon.jobs]
+  prefill_only_portals: [linkedin, handshake]
+  never_automate: [ssn, e-signature, gov-id-upload, i-9]
+  excluded_companies: []
