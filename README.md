@@ -19,6 +19,12 @@ Nothing is ever submitted without an approved card. `consent.auto_submit_portals
 means "the agent may click submit after approval" — it never means "skip the
 approval."
 
+## Setup
+
+```
+python3 -m pip install -r requirements.txt   # PyYAML
+```
+
 ## Commands
 
 ```bash
